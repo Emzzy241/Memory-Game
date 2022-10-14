@@ -1,3 +1,55 @@
+
+// importing my css
+import './css/styles.css';
+
+"use strict";
+// the use strict means my code should be performed under strict conditions
+// it helped me to get rid of some annoying errors in vanilla like: elem.style telling me style is undefined
+// in this case the strict condition helped me get rid of the src undefined error
+
+// importing all images
+
+import jsBadgeImage from "./assets/images/js-badge.svg"
+import vueImage from "./assets/images/vue.svg";
+import aureliaImage from "./assets/images/aurelia.svg";
+import angularImage from "./assets/images/angular.svg";
+import emberImage from "./assets/images/ember.svg";
+import backboneImage from "./assets/images/backbone.svg";
+import reactImage from "./assets/images/react.svg";
+
+
+
+
+let myJsBadge = document.querySelectorAll(".back-face");
+let myReactImg = document.querySelectorAll(".react");
+let myAureliaImg = document.querySelectorAll(".aurellia");
+let myVueImg = document.querySelectorAll(".vue");
+let myAngularImg = document.querySelectorAll(".angular");
+let myEmberImg = document.querySelectorAll(".ember");
+let myBackboneImg = document.querySelectorAll(".backbone");
+// using all of my images imported now
+
+
+const myImg = new Image();
+myImg.src = myJsBadge;
+
+myJsBadge.append(myImg);
+
+// myJsBadge.src = jsBadgeImage;
+// myAureliaImg.src = aureliaImage;
+// myVueImg.src = vueImage;
+// myAngularImg.src = angularImage;
+// myEmberImg .src = emberImage;
+// myBackboneImg.src = backboneImage;
+// myReactImg.src = reactImage;
+
+// element.appendChild(m)
+
+console.log(thisJsBadge);
+console.log(thisReact);
+
+
+
 // storing a list of all memory-card elements and storing in a constant variable
 
 const cards = document.querySelectorAll(".memory-card");
@@ -43,7 +95,7 @@ function flipCard() {
     // the firstCard variable is still unset at the beginning so we have the power now to stop it from running so it doesn't see 1 card's
     // double click as a 2 card click
 
-    // toggling the flip class w set in styles.css
+    // toggling the flip class we created in styles.css
     // to perform the matching logic we need we changed the toggle to add, i.e whenever the image has been flipped, it should not 
     // change back when user taps again rather it should only do so when I tell it to
 
