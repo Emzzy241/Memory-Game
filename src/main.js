@@ -1,4 +1,8 @@
 
+// storing a list of all memory-card elements and storing in a constant variable
+
+const cards = document.querySelectorAll(".memory-card");
+
 // importing my css
 import './css/styles.css';
 
@@ -18,22 +22,139 @@ import backboneImage from "./assets/images/backbone.svg";
 import reactImage from "./assets/images/react.svg";
 
 
+// picking both  back images of the jsBadge image for aurelia card
+let myJsBadgeAureliaImg = document.querySelector(".js");
+let myJsBadgeAureliaImg2 = document.querySelector(".js1");
+
+// picking both front images of aurelia card
+let myAureliaImg = document.querySelector(".au");
+let myAureliaImg2 = document.querySelector(".au1");
+// console.log(myJsBadgeImg);
 
 
-let myJsBadge = document.querySelectorAll(".back-face");
-let myReactImg = document.querySelectorAll(".react");
-let myAureliaImg = document.querySelectorAll(".aurellia");
-let myVueImg = document.querySelectorAll(".vue");
-let myAngularImg = document.querySelectorAll(".angular");
-let myEmberImg = document.querySelectorAll(".ember");
-let myBackboneImg = document.querySelectorAll(".backbone");
-// using all of my images imported now
+// for the jsBadgeImg housing angular
+let myJsBadgeAngularImg = document.querySelector(".js2");
+let myJsBadgeAngularImg2 = document.querySelector(".js3");
+
+// for showing the angualarImg
+let myAngularImg = document.querySelector(".ang");
+let myAngularImg2 = document.querySelector(".ang1");
 
 
-const myImg = new Image();
-myImg.src = myJsBadge;
+// for the jsBadge housing ember
+let myJSBadgeEmberImg = document.querySelector(".js4");
+let myJSBadgeEmberImg2 = document.querySelector(".js5");
 
-myJsBadge.append(myImg);
+//storing the ember image in html
+let myEmberImg = document.querySelector(".em");
+let myEmberImg2 = document.querySelector(".em1");
+
+// storing the jsBadge Image housing vue
+let myJSBadgeVueImg = document.querySelector(".js6");
+let myJSBadgeVueImg2 = document.querySelector(".js7");
+
+
+// storing the vue image in HTML by class 
+let myVueImg = document.querySelector(".vue");
+let myVueImg2 = document.querySelector(".vue1");
+
+// for storing the jsBadge Image housing backbone
+let myJsBadgeBackboneImg = document.querySelector(".js8");
+let myJsBadgeBackboneImg2 = document.querySelector(".js9");
+
+
+// for storing the backbone Image in html by class
+let myBackBoneImg = document.querySelector(".bb");
+let myBackBoneImg2 = document.querySelector(".bb1");
+
+
+// for storing the jsBadge image housing react
+let myJsBadgeReactImg = document.querySelector(".js10");
+let myJsBadgeReactImg2 = document.querySelector(".js11");
+
+
+// for  storing the react Image in html and targeting by class
+let myReactImg = document.querySelector(".re");
+let myReactImg2 = document.querySelector(".re1");
+
+// for storing my game icon at the top
+let myGameIconImage = document.querySelector(".myGameIcon");
+
+
+
+
+
+
+
+myJsBadgeAureliaImg.src = jsBadgeImage;
+myJsBadgeAureliaImg2.src = jsBadgeImage;
+
+myAureliaImg.src = aureliaImage;
+myAureliaImg2.src = aureliaImage;
+
+// for showing the jsBadgeImg housing angular
+myJsBadgeAngularImg.src = jsBadgeImage;
+myJsBadgeAngularImg2.src = jsBadgeImage;
+
+
+// for showing the angualarImg
+myAngularImg.src = angularImage;
+myAngularImg2.src = angularImage;
+
+// for showing thr jsBadge image housing ember
+myJSBadgeEmberImg.src = jsBadgeImage;
+myJSBadgeEmberImg2.src = jsBadgeImage;
+
+// for showing the ember Image in html after jsBdgeImg is clicked
+myEmberImg.src = emberImage;
+myEmberImg2.src = emberImage;
+
+// for showing the jsBadge image housing vue
+myJSBadgeVueImg.src = jsBadgeImage;
+myJSBadgeVueImg2.src = jsBadgeImage;
+
+// for showing the vue image in html after the jsBadgeImg is clicked
+myVueImg.src = vueImage;
+myVueImg2.src = vueImage;
+
+// for showing the jsBadge image housing backbone
+myJsBadgeBackboneImg.src = jsBadgeImage;
+myJsBadgeBackboneImg2.src = jsBadgeImage;
+
+// for showing the backbone image in html after the jsBadgeImg is clicked
+myBackBoneImg.src = backboneImage;
+myBackBoneImg2.src = backboneImage;
+
+
+// for showing the jsBadge Image housing rect
+myJsBadgeReactImg.src = jsBadgeImage;
+myJsBadgeReactImg2.src = jsBadgeImage;
+
+// for showing the react image in html after the jsBadgeImg is clicked
+myReactImg.src = reactImage;
+myReactImg2.src = reactImage;
+
+
+// for showing my game icon
+myGameIconImage.href = jsBadgeImage;
+
+
+
+
+// let myJsBadge = document.querySelectorAll(".back-face");
+// let myReactImg = document.querySelector("#react");
+// let myAureliaImg = document.querySelectorAll("#aurellia");
+// let myVueImg = document.querySelectorAll("#vue");
+// let myAngularImg = document.querySelectorAll("#angular");
+// let myEmberImg = document.querySelectorAll("#ember");
+// let myBackboneImg = document.querySelectorAll("#backbone");
+// // using all of my images imported now
+
+ 
+// const myImg = new Image();
+// myImg.src = myJsBadge;
+
+// myJsBadge.append(myImg);
 
 // myJsBadge.src = jsBadgeImage;
 // myAureliaImg.src = aureliaImage;
@@ -45,14 +166,10 @@ myJsBadge.append(myImg);
 
 // element.appendChild(m)
 
-console.log(thisJsBadge);
-console.log(thisReact);
+// console.log(thisJsBadge);
+// console.log(thisReact);
 
 
-
-// storing a list of all memory-card elements and storing in a constant variable
-
-const cards = document.querySelectorAll(".memory-card");
 
 // when player clicks card we need to know if its first card or 2nd card so we can perform the matching logic
 
