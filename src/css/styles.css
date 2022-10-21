@@ -1,0 +1,75 @@
+/* adding a reset to all elements */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex; /* for centering the game zone*/
+    height: 100vh;
+    /* viweport is the visible area of you webpage */
+    background-color: #060ab2;
+
+}
+
+img{
+    width: 100px;
+}
+
+.memory-game{
+    margin: auto; /* since we have added display flex to our body we need to make sure it gets centered vertically and horizontally*/
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+/* the perspective added here was to add a 3d effect to the card spinning... the 
+perspective preoperty gives some depth to our elements and after this we need to add a property called 
+transform-style to the memory-card this time around and not the memory-game and this is what is going to insert our memory
+card element inside the 3d space we just created in the memory-game container.... If we didn't do this, the memory-card
+keeps sitting down flat on the 2d space and we don't want that  */
+
+.memory-card{
+    width: calc(25% - 10px);
+    /* calu=culating out width and height with respect to the margin that breaks our width and heigh */
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+/* adding a click effect to the memory class.... the active pseudo class gets clicked whenever an element gets clicked */
+/* we applied a 97% scale of its original size */
+/* for the transition scale to work in the active pseudo class we need to apply a transform scale in the real memory card class above(.memory-card) */
+
+
+.memory-card:active{
+    transform: scale(.97);
+    transition: transform 0.2s;
+}
+/* no space here because the 2 class belongs to the element */
+.memory-card.flip{
+    transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: #1c7ccc;
+    backface-visibility: hidden; /* to ensure html won't look at the mirror default its been already set for, rather it will 
+    show us the other image that was hidden at the back with position relative when we add a new rotation to the front-face class*/
+}
+
+.front-face{
+    transform: rotateY(180deg);
+}

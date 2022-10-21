@@ -33,7 +33,7 @@ module.exports = {
       outputReport: false
     }),
     new HtmlWebpackPlugin({
-      title: 'Shape Tracker',
+      title: 'Memory Game',
       template: './src/index.html',
       inject: 'body'
     })
