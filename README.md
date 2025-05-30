@@ -30,6 +30,9 @@ _Note: the website is designed to run on a web browser just be sure you have one
 ## WEBSITE LINK
 https://emzzy241.github.io/Memory-Game/
 
+Deployed on Vercel on link:
+https://memory-game-eight-omega-90.vercel.app/
+
 ## License 
 Licensed under the GNU General Public License 
 © 2022 _by Mojiboye Emmanuel_ All Rights Reserved.
